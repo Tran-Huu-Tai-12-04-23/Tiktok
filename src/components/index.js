@@ -1,7 +1,7 @@
-import Defaultlayout from "~/components/layout/Defaultlayout";
+import Defaultlayout from "~/layouts/Defaultlayout";
 import Header from "./Header";
 import Sidebar from "./Sidebar";
-import HeaderOnly from "~/components/layout/HeaderOnly";
+import HeaderOnly from "~/layouts/HeaderOnly";
 
 //export
 
