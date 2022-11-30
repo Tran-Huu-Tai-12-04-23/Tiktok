@@ -1,0 +1,22 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 8px;
+
+  width: 22.3rem;
+  .content__item {
+    width: 100%;
+    display: block;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0;
+    padding: 8px 0;
+    background-color: transparent;
+
+    &:hover {
+      background-color: #252525;
+      cursor: pointer;
+    }
+  }
+}

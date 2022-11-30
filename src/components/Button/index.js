@@ -10,12 +10,15 @@ function Button({
   to,
   href,
   onClick,
-  iconLeft,
+  leftIcon,
+  rightIcon,
   children,
+  className,
   ...moreProps
 }) {
   const classNames = clsx(
     styles.wrapper,
+    className,
     styles.normal,
     {
       [styles.small]: small,
@@ -31,7 +34,8 @@ function Button({
     },
     {
       [styles.rounded]: rounded,
-    }
+    },
+    styles.content__item
   );
   let StyleButton = "div";
   if (to) {
@@ -48,8 +52,9 @@ function Button({
 
   return (
     <StyleButton className={classNames} {...props}>
-      {iconLeft}
+      {leftIcon}
       <span className={clsx(styles.title)}>{children}</span>
+      {rightIcon}
     </StyleButton>
   );
 }

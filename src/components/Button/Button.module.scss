@@ -4,7 +4,7 @@
 }
 
 .wrapper {
-  min-width: 9rem;
+  min-width: 8rem;
   padding: 0 0.8rem;
   height: 3.6rem;
   display: flex;
@@ -15,15 +15,20 @@
   cursor: pointer;
   border: 1px solid transparent;
   font-weight: bold;
-
   .title {
-    margin: 0 12px;
+    text-align: center;
+    width: 14rem;
+  }
+
+  svg {
+    margin-right: 12px;
+    margin-left: 12px;
+    min-width: 20px;
   }
 }
 .wrapper + .wrapper {
   margin-left: 24px;
 }
-
 // size button
 .small {
   height: 3rem;
