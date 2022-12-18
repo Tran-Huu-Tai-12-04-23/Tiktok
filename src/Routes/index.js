@@ -1,4 +1,4 @@
-import { HeaderOnly } from "~/components";
+import { HeaderOnly } from "../components";
 import { Home, Following, Search, Profile } from "~/pages";
 const publicRoutes = [
   { path: "/", page: Home },
